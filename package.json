@@ -1,0 +1,25 @@
+{
+  "name": "landing-page-freelance-agency",
+  "version": "1.0.0",
+  "description": "Landing page for a Freelanec Agency",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "sass": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markokarapandzic/landing-page-freelance-agency.git"
+  },
+  "author": "Marko Karapandzic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markokarapandzic/landing-page-freelance-agency/issues"
+  },
+  "homepage": "https://github.com/markokarapandzic/landing-page-freelance-agency#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}
