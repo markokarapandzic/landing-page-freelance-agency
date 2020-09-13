@@ -3,10 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 10rem;
+  height: auto;
+  margin-bottom: 5rem;
 
   &__title {
     text-align: center;
+
+    &--description {
+      margin-bottom: 1rem;
+    }
   }
 
   &__description {
@@ -15,6 +20,7 @@
 
   &__testemonials {
     display: flex;
+    width: 90vw;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -25,7 +31,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      width: 20rem;
+      min-width: 300px;
       background-color: $background-color;
       border-radius: 1rem;
       padding: 1rem;
@@ -33,11 +39,18 @@
 
       &--description {
         text-align: left;
+        margin-bottom: 1rem;
       }
 
       &__client {
         display: flex;
         flex-direction: row;
+
+        &__img {
+          max-width: 100%;
+          max-height: 50px;
+          margin-right: 1rem;
+        }
 
         &--data {
           display: flex;

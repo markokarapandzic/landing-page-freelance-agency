@@ -4,6 +4,8 @@
 @import "./intro-section";
 @import "./services-section";
 @import "./clients-section";
+@import "./about-us-section";
+@import "./contact-us-section";
 
 html {
   @include responsive-font(2vw, 15px, 150px, 50px);
