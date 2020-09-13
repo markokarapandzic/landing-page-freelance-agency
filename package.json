@@ -1,11 +1,10 @@
 {
   "name": "landing-page-freelance-agency",
   "version": "1.0.0",
-  "description": "Landing page for a Freelanec Agency",
+  "description": "Landing page for a Freelance Agency",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server",
-    "sass": "gulp"
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",

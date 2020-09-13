@@ -1,6 +1,23 @@
-$primary-color: #d6d6d6;
+@import "./config";
+@import "./utils";
+@import "./menu";
+@import "./intro-section";
+@import "./services-section";
+@import "./clients-section";
 
-body {
-  color: $primary-color;
-  background-color: blue;
+html {
+  @include responsive-font(2vw, 15px, 150px, 50px);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
 }
