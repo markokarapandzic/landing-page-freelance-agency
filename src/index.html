@@ -1,25 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	
-  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
 
-	<title>Freelance Agency</title>
-</head>
-<body>
-  <nav class="nav">
-    <div class="nav__logo">
-      <img src="./image/logo" alt="Logo Image" class="nav__logo--image">
-      <h1 class="nav__logo--title">Paradigm</h1>
-    </div> 
-    <div class="nav__btns">
-      <a href="#" class="link">Home</a> 
-      <a href="#" class="link">What We Do</a> 
-      <a href="#" class="link">Our Clients</a> 
-      <a href="#" class="link">About Us</a> 
-      <a href="#" class="link">Contact Us</a> 
-    </div>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Freelance Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>PARADIGM</h1>
+      </div>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars fa-2x menu-btn__burger"></i>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item active">
+            <a href="#intro-section" class="menu-nav__link">Home</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#what-we-do-section" class="menu-nav__link">What We Do</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#clients-section" class="menu-nav__link">Our Clients</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#about-section" class="menu-nav__link">About Us</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#contact-section" class="menu-nav__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <section id="intro-section" class="intro spacing">
+        <h2 class="intro__main-text">
+          We are here to help to grow your business. Simply and smart
+        </h2>
+        <p class="intro__description">
+          Helping businesses grow is out moto. We are here to help you create
+          more and grow more.
+        </p>
+        <button class="btn"><p>Learn More</p></button>
+        <img src="images/App installation-pana.png" alt="Mobile App" />
+      </section>
+
+      <section id="what-we-do-section" class="what-we-do spacing">
+        <h2 class="what-we-do__title">What we do</h2>
+
+        <div class="what-we-do__service">
+          <h3 class="what-we-do__service--title">App Development</h3>
+          <p class="what-we-do__service--description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            doloribus fuga cumque tempore perferendis aut molestiae dolore rem
+            voluptas suscipit.
+          </p>
+          <img src="images/app-development.png" alt="App Development" />
+        </div>
+        <div class="what-we-do__service">
+          <h3 class="what-we-do__service--title">Marketing</h3>
+          <p class="what-we-do__service--description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            doloribus fuga cumque tempore perferendis aut molestiae dolore rem
+            voluptas suscipit.
+          </p>
+          <img src="images/marketing.png" alt="Marketing" />
+        </div>
+        <div class="what-we-do__service">
+          <h3 class="what-we-do__service--title">Quality Assurance</h3>
+          <p class="what-we-do__service--description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            doloribus fuga cumque tempore perferendis aut molestiae dolore rem
+            voluptas suscipit.
+          </p>
+          <img src="images/Statistics-pana.png" alt="Quality Assurance" />
+        </div>
+      </section>
+
+      <section id="clients-section" class="clients spacing">
+        <div class="clients__title">
+          <h2 class="clients__title--header">Our Clients</h2>
+          <p class="clients__title--description">
+            Here is what our clients have to say about us
+          </p>
+
+          <div class="clients__testemonials spacing-vertical">
+            <div class="clients__testemonials--item">
+              <p class="clients__testemonials--item--description">
+                Great work experience with this company. Would recommend!
+              </p>
+              <div class="clients__testemonials--item__client">
+                <img
+                  src="images/client-1.png"
+                  alt="Client 1"
+                  class="clients__testemonials--item__client__img"
+                />
+                <div class="clients__testemonials--item__client--data">
+                  <h4 class="clients__testemonials--item__client--data__name">
+                    Denny Mullen
+                  </h4>
+                  <p
+                    class="clients__testemonials--item__client--data__position"
+                  >
+                    CEO
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clients__testemonials--item">
+              <p class="clients__testemonials--item--description">
+                My website works so fast now. I really like it. Thank you for
+                making it.
+              </p>
+              <div class="clients__testemonials--item__client">
+                <img
+                  src="images/client-2.png"
+                  alt="Client 2"
+                  class="clients__testemonials--item__client__img"
+                />
+                <div class="clients__testemonials--item__client--data">
+                  <h4 class="clients__testemonials--item__client--data__name">
+                    Samuel Harper
+                  </h4>
+                  <p
+                    class="clients__testemonials--item__client--data__position"
+                  >
+                    Designer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clients__testemonials--item">
+              <p class="clients__testemonials--item--description">
+                My website works so fast now. I really like it. Thank you for
+                making it.
+              </p>
+              <div class="clients__testemonials--item__client">
+                <img
+                  src="images/client-3.png"
+                  alt="Client 2"
+                  class="clients__testemonials--item__client__img"
+                />
+                <div class="clients__testemonials--item__client--data">
+                  <h4 class="clients__testemonials--item__client--data__name">
+                    Matias McDaniel
+                  </h4>
+                  <p
+                    class="clients__testemonials--item__client--data__position"
+                  >
+                    Project Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section" class="about-us">
+        <h2 class="about-us__title">About Us</h2>
+        <p class="about-us__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          saepe earum nulla, similique error, porro numquam voluptatum id
+          tempore dicta magnam officia enim esse, sed corrupti nobis molestiae
+          deleniti! Unde molestiae aliquid id. Ab eos nulla quis accusantium
+          repellendus, veritatis quaerat recusandae maxime sit omnis quod illum
+          rem modi a in mollitia laborum aliquid dolorum reiciendis! Sit
+          accusamus impedit quas? Fugiat deserunt iusto consequatur excepturi
+          quaerat odit neque architecto doloremque, alias vitae veritatis modi,
+          quisquam sed quis quod itaque ipsa cum maiores. Sapiente, incidunt
+          itaque corporis modi consequuntur ipsum eius dolores, consequatur,
+          dolorem odit officiis? Veritatis voluptate dolor repellat maxime.
+        </p>
+        <img src="images/about-us.png" alt="About Us" />
+      </section>
+
+      <section id="contact-section" class="contact-us spacing">
+        <div class="contact-us__header">
+          <h2 class="contact-us__header--title">Contact Us</h2>
+          <p class="contact-us__header--description">
+            Connect with us and we will help you grow
+          </p>
+        </div>
+
+        <div class="contact-us__data">
+          <div class="contact-us__data__form">
+
+          </div>
+          <div class="contact-us__data__info spacing">
+            <div class="contact-us__data__info__header">
+              <h3 class="contact-us__data__info__header--title">
+                Contact Information
+              </h3>
+              <p class="contact-us__data__info__header--description">
+                Fill out the form and we will contact you within 24 hours.
+              </p>
+            </div>
+            <div class="contact-us__data__info__places">
+              <div
+                class="contact-us__data__info__places--place spacing-vertical"
+              >
+                <i
+                  class="fas fa-phone contact-us__data__info__places--place--icon"
+                ></i>
+                <p class="contact-us__data__info__places--place--text">
+                  +728 213 3213
+                </p>
+              </div>
+              <div
+                class="contact-us__data__info__places--place spacing-vertical"
+              >
+                <i
+                  class="fas fa-envelope contact-us__data__info__places--place--icon"
+                ></i>
+                <p class="contact-us__data__info__places--place--text">
+                  contact@paradigm.com
+                </p>
+              </div>
+              <div
+                class="contact-us__data__info__places--place spacing-vertical"
+              >
+                <i
+                  class="fas fa-map-marker-alt contact-us__data__info__places--place--icon"
+                ></i>
+                <p class="contact-us__data__info__places--place--text">
+                  +728 213 3213
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-us__data__info__social-icons spacing-vertical">
+              <i
+                class="fab fa-facebook-f fa-2x contact-us__data__info__social-icons--icon"
+              ></i>
+              <i
+                class="fab fa-twitter fa-2x contact-us__data__info__social-icons--icon"
+              ></i>
+              <i
+                class="fab fa-instagram fa-2x contact-us__data__info__social-icons--icon"
+              ></i>
+              <i
+                class="fab fa-linkedin-in fa-2x contact-us__data__info__social-icons--icon"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

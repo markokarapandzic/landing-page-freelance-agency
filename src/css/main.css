@@ -129,6 +129,9 @@ a {
 .menu-nav__item:nth-child(4) {
   transition-delay: 0.55s; }
 
+.menu-nav__item:nth-child(5) {
+  transition-delay: 0.65s; }
+
 .intro {
   position: relative;
   display: flex;
