@@ -245,6 +245,30 @@ a {
             color: #fff; }
       .contact-us__data__info__social-icons--icon {
         color: #fff; }
+    .contact-us__data__form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 0.5rem; }
+      .contact-us__data__form__column-one, .contact-us__data__form__column-two {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; }
+        .contact-us__data__form__column-one--input, .contact-us__data__form__column-two--input {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start; }
+          .contact-us__data__form__column-one--input__label, .contact-us__data__form__column-two--input__label {
+            color: #707070; }
+          .contact-us__data__form__column-one--input__input-type, .contact-us__data__form__column-two--input__input-type {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #707070; }
 
 html {
   font-size: 50px;
