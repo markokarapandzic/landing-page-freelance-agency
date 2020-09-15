@@ -1,0 +1,32 @@
+{
+  "name": "landing-page-freelance-agency",
+  "version": "1.0.0",
+  "description": "Landing page for a Freelance Agency",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markokarapandzic/landing-page-freelance-agency.git"
+  },
+  "author": "Marko Karapandzic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markokarapandzic/landing-page-freelance-agency/issues"
+  },
+  "homepage": "https://github.com/markokarapandzic/landing-page-freelance-agency#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-image": "^6.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.14.1"
+  }
+}

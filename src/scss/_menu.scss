@@ -1,0 +1,129 @@
+.logo {
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $color-accent;
+  }
+}
+
+.menu-btn {
+  &__burger {
+    color: black;
+    @include transition-ease;
+
+    &.open {
+      transform: rotate(720deg);
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1;
+      color: white;
+    }
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $color-accent;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    @include transition-ease;
+
+    &.open {
+      transform: translateY(0);
+    }
+
+    &__item {
+      transform: translateX(100vw);
+      @include transition-ease;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      &.active > a {
+        text-decoration: underline;
+      }
+
+      @include desktop {
+        transform: translateX(0);
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding: 2rem 0;
+      font-weight: 300;
+      @include transition-ease;
+      color: #fff;
+
+      &:hover {
+        color: $text-color;
+
+        @include desktop {
+          color: $color-accent;
+        }
+      }
+
+      @include desktop {
+        font-size: 0.5rem;
+        padding: 0;
+        color: $text-color;
+      }
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      transform: none;
+      overflow: visible;
+      height: auto;
+      background-color: transparent;
+      padding: 0;
+
+      * + * {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  @include desktop {
+    position: initial;
+    width: auto;
+    visibility: visible;
+    padding: 0;
+  }
+}
+
+@for $i from 1 through 5 {
+  .menu-nav__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
+  }
+}

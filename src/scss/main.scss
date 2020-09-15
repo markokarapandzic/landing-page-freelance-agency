@@ -1,0 +1,57 @@
+@import "./config";
+@import "./utils";
+@import "./menu";
+@import "./intro-section";
+@import "./services-section";
+@import "./clients-section";
+@import "./about-us-section";
+@import "./contact-us-section";
+
+html {
+  @include responsive-font(2vw, 15px, 35px, 30px);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+  @include desktop {
+    padding: 0 1rem;
+  }
+}
+
+@include desktop {
+  p {
+    font-size: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  width: 85%;
+  max-width: 65em; /* 1000px */
+  margin: 0 auto;
+  
+  @include desktop-large {
+    width: 75%;
+  }
+
+  @include desktop-ultra-large {
+    width: 65%;
+  }
+}
