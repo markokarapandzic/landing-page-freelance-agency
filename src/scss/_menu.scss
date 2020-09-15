@@ -20,6 +20,10 @@
       color: white;
     }
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .nav {
@@ -61,6 +65,12 @@
       &.active > a {
         text-decoration: underline;
       }
+
+      @include desktop {
+        transform: translateX(0);
+        padding: 0;
+        margin: 0;
+      }
     }
 
     &__link {
@@ -74,12 +84,45 @@
 
       &:hover {
         color: $text-color;
+
+        @include desktop {
+          color: $color-accent;
+        }
+      }
+
+      @include desktop {
+        font-size: 0.5rem;
+        padding: 0;
+        color: $text-color;
+      }
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      transform: none;
+      overflow: visible;
+      height: auto;
+      background-color: transparent;
+      padding: 0;
+
+      * + * {
+        padding-left: 1rem;
       }
     }
   }
+
+  @include desktop {
+    position: initial;
+    width: auto;
+    visibility: visible;
+    padding: 0;
+  }
 }
 
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
   .menu-nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.1s) + 0.15s;
   }

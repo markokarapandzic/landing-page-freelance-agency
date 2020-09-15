@@ -24,11 +24,35 @@
 }
 
 @mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.container {
-  width: 85%;
-  max-width: 65em; /* 1000px */
-  margin: 0 auto;
+@mixin mobile {
+  @media screen and (min-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media screen and (min-width: $breakpoint-large-desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-ultra-large {
+  @media screen and (min-width: $breakpoint-ultra-large-desktop) {
+    @content;
+  }
 }

@@ -31,67 +31,67 @@
       <nav class="nav">
         <ul class="menu-nav">
           <li class="menu-nav__item active">
-            <a href="index.html" class="menu-nav__link">Home</a>
+            <a href="#intro-section" class="menu-nav__link">Home</a>
           </li>
           <li class="menu-nav__item">
-            <a href="about.html" class="menu-nav__link">About Me</a>
+            <a href="#what-we-do-section" class="menu-nav__link">What We Do</a>
           </li>
           <li class="menu-nav__item">
-            <a href="projects.html" class="menu-nav__link">My Projects</a>
+            <a href="#clients-section" class="menu-nav__link">Our Clients</a>
           </li>
           <li class="menu-nav__item">
-            <a href="contact.html" class="menu-nav__link">Contact Me</a>
+            <a href="#about-section" class="menu-nav__link">About Us</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#contact-section" class="menu-nav__link">Contact Us</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main container">
-      <section class="intro spacing">
-        <h2 class="intro__main-text">
+    <section id="intro-section" class="intro spacing">
+      <div class="intro__data spacing">
+        <h2 class="intro__data__main-text">
           We are here to help to grow your business. Simply and smart
         </h2>
-        <p class="intro__description">
+        <p class="intro__data__description">
           Helping businesses grow is out moto. We are here to help you create
           more and grow more.
         </p>
         <button class="btn"><p>Learn More</p></button>
-        <img src="images/App installation-pana.png" alt="Mobile App" />
-      </section>
+      </div>
+      <img src="images/App installation-pana.png" alt="Mobile App" class="intro__image--mobile" />
+      <img src="images/intro-business.png" alt="Business Image" class="intro__image--desktop">
+    </section>
 
-      <section class="what-we-do spacing">
+    <main class="main container">
+      <section id="what-we-do-section" class="what-we-do spacing">
         <h2 class="what-we-do__title">What we do</h2>
 
         <div class="what-we-do__service">
-          <h3 class="what-we-do__service--title">App Development</h3>
-          <p class="what-we-do__service--description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            doloribus fuga cumque tempore perferendis aut molestiae dolore rem
-            voluptas suscipit.
-          </p>
-          <img src="images/app-development.png" alt="App Development" />
+          <div class="what-we-do__service--data spacing">
+            <h3 class="what-we-do__service--data__title">App Development</h3>
+            <p class="what-we-do__service--data__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis molestiae saepe, vel magnam voluptas hic ipsum maxime perferendis atque omnis praesentium ea dicta consequuntur. Repudiandae blanditiis suscipit est, ullam impedit cumque porro aliquam labore, tempora consequuntur alias expedita nobis! Corporis, dolorum. Totam pariatur aperiam sunt voluptas tenetur recusandae eos voluptatem.</p>
+          </div>
+          <img src="images/app-development.png" alt="App Development" class="what-we-do__service--image"/>
         </div>
         <div class="what-we-do__service">
-          <h3 class="what-we-do__service--title">Marketing</h3>
-          <p class="what-we-do__service--description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            doloribus fuga cumque tempore perferendis aut molestiae dolore rem
-            voluptas suscipit.
-          </p>
-          <img src="images/marketing.png" alt="Marketing" />
+          <div class="what-we-do__service--data spacing">
+            <h3 class="what-we-do__service--data__title">Marketing</h3>
+            <p class="what-we-do__service--data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima, est iste expedita id recusandae pariatur voluptate tempore animi sed quidem saepe possimus. Sed dolore praesentium cumque natus voluptas asperiores, quisquam placeat dicta dolorem, ea nesciunt autem voluptatem. Tempora quis, culpa provident officiis dolorem esse reiciendis odit nobis amet sapiente.</p>
+          </div>
+          <img src="images/marketing.png" alt="Marketing" class="what-we-do__service--image"/>
         </div>
         <div class="what-we-do__service">
-          <h3 class="what-we-do__service--title">Quality Assurance</h3>
-          <p class="what-we-do__service--description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            doloribus fuga cumque tempore perferendis aut molestiae dolore rem
-            voluptas suscipit.
-          </p>
-          <img src="images/Statistics-pana.png" alt="Quality Assurance" />
+          <div class="what-we-do__service--data spacing">
+            <h3 class="what-we-do__service--data__title">Quality Assurance</h3>
+            <p class="what-we-do__service--data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates et, tenetur animi dolorum doloribus illum eius ab quisquam ea, consequatur libero amet est necessitatibus suscipit molestiae obcaecati? Temporibus in perspiciatis explicabo ullam, eius repellat officia iusto debitis mollitia. Eum deserunt quasi provident quibusdam officiis! Ut possimus sapiente ipsam quam!</p>
+          </div>
+          <img src="images/Statistics-pana.png" alt="Quality Assurance" class="what-we-do__service--image"/>
         </div>
       </section>
 
-      <section class="clients spacing">
+      <section id="clients-section" class="clients spacing">
         <div class="clients__title">
           <h2 class="clients__title--header">Our Clients</h2>
           <p class="clients__title--description">
@@ -101,11 +101,14 @@
           <div class="clients__testemonials spacing-vertical">
             <div class="clients__testemonials--item">
               <p class="clients__testemonials--item--description">
-                Great work experience with this company. Would recommend it to
-                everyone!!!
+                Great work experience with this company. Would recommend!
               </p>
               <div class="clients__testemonials--item__client">
-                <img src="" alt="Client 1" />
+                <img
+                  src="images/client-1.png"
+                  alt="Client 1"
+                  class="clients__testemonials--item__client__img"
+                />
                 <div class="clients__testemonials--item__client--data">
                   <h4 class="clients__testemonials--item__client--data__name">
                     Denny Mullen
@@ -120,35 +123,136 @@
             </div>
             <div class="clients__testemonials--item">
               <p class="clients__testemonials--item--description">
-                Great work experience with this company. Would recommend it to
-                everyone!!!
+                My website works so fast now. I really like it. Thank you for
+                making it.
               </p>
               <div class="clients__testemonials--item__client">
-                <img src="" alt="Client 1" />
+                <img
+                  src="images/client-2.png"
+                  alt="Client 2"
+                  class="clients__testemonials--item__client__img"
+                />
                 <div class="clients__testemonials--item__client--data">
                   <h4 class="clients__testemonials--item__client--data__name">
-                    Denny Mullen
+                    Samuel Harper
                   </h4>
                   <p
                     class="clients__testemonials--item__client--data__position"
                   >
-                    CEO
+                    Designer
                   </p>
                 </div>
               </div>
             </div>
             <div class="clients__testemonials--item">
               <p class="clients__testemonials--item--description">
-                Great work experience with this company. Would recommend it to
-                everyone!!!
+                My website works so fast now. I really like it. Thank you for
+                making it.
               </p>
               <div class="clients__testemonials--item__client">
-                <img src="" alt="Client 1" />
-                <h4 class="clients__testemonials--item__client--name">
-                  Denny Mullen
-                </h4>
-                <p class="clients__testemonials--item__client--position">CEO</p>
+                <img
+                  src="images/client-3.png"
+                  alt="Client 2"
+                  class="clients__testemonials--item__client__img"
+                />
+                <div class="clients__testemonials--item__client--data">
+                  <h4 class="clients__testemonials--item__client--data__name">
+                    Matias McDaniel
+                  </h4>
+                  <p
+                    class="clients__testemonials--item__client--data__position"
+                  >
+                    Project Manager
+                  </p>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section" class="about-us">
+        <h2 class="about-us__title">About Us</h2>
+        <p class="about-us__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          saepe earum nulla, similique error, porro numquam voluptatum id
+          tempore dicta magnam officia enim esse, sed corrupti nobis molestiae
+          deleniti! Unde molestiae aliquid id. Ab eos nulla quis accusantium
+          repellendus, veritatis quaerat recusandae maxime sit omnis quod illum
+          rem modi a in mollitia laborum aliquid dolorum reiciendis! Sit
+          accusamus impedit quas? Fugiat deserunt iusto consequatur excepturi
+          quaerat odit neque architecto doloremque, alias vitae veritatis modi,
+          quisquam sed quis quod itaque ipsa cum maiores. Sapiente, incidunt
+          itaque corporis modi consequuntur ipsum eius dolores, consequatur,
+          dolorem odit officiis? Veritatis voluptate dolor repellat maxime.
+        </p>
+        <img src="images/about-us.png" alt="About Us" />
+      </section>
+
+      <section id="contact-section" class="contact-us spacing">
+        <div class="contact-us__header">
+          <h2 class="contact-us__header--title">Contact Us</h2>
+          <p class="contact-us__header--description">
+            Connect with us and we will help you grow
+          </p>
+        </div>
+
+        <div class="contact-us__data">
+          <div class="contact-us__data__info spacing">
+            <div class="contact-us__data__info__header">
+              <h3 class="contact-us__data__info__header--title">
+                Contact Information
+              </h3>
+              <p class="contact-us__data__info__header--description">
+                Fill out the form and we will contact you within 24 hours.
+              </p>
+            </div>
+            <div class="contact-us__data__info__places">
+              <div
+                class="contact-us__data__info__places--place spacing-vertical"
+              >
+                <i
+                  class="fas fa-phone contact-us__data__info__places--place--icon"
+                ></i>
+                <p class="contact-us__data__info__places--place--text">
+                  +728 213 3213
+                </p>
+              </div>
+              <div
+                class="contact-us__data__info__places--place spacing-vertical"
+              >
+                <i
+                  class="fas fa-envelope contact-us__data__info__places--place--icon"
+                ></i>
+                <p class="contact-us__data__info__places--place--text">
+                  contact@paradigm.com
+                </p>
+              </div>
+              <div
+                class="contact-us__data__info__places--place spacing-vertical"
+              >
+                <i
+                  class="fas fa-map-marker-alt contact-us__data__info__places--place--icon"
+                ></i>
+                <p class="contact-us__data__info__places--place--text">
+                  +728 213 3213
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-us__data__info__social-icons spacing-vertical">
+              <i
+                class="fab fa-facebook-f fa-1x contact-us__data__info__social-icons--icon"
+              ></i>
+              <i
+                class="fab fa-twitter fa-1x contact-us__data__info__social-icons--icon"
+              ></i>
+              <i
+                class="fab fa-instagram fa-1x contact-us__data__info__social-icons--icon"
+              ></i>
+              <i
+                class="fab fa-linkedin-in fa-1x contact-us__data__info__social-icons--icon"
+              ></i>
             </div>
           </div>
         </div>

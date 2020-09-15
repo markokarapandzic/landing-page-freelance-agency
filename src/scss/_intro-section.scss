@@ -5,15 +5,64 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
+  padding: 0 7.5%;
   padding-top: 4rem;
 
-  &__main-text {
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.5;
+  &__data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__main-text {
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.5;
+
+      @include desktop {
+        text-align: left;
+      }
+    }
+
+    &__description {
+      text-align: center;
+
+      @include desktop {
+        text-align: left;
+        font-size: 0.75rem;
+      }
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
   }
 
-  &__description {
-    text-align: center;
+  &__image--desktop {
+    display: none;
+
+    @include desktop {
+      display: initial;
+      flex: 1;
+      height: auto;
+    }
+  }
+
+  &__image--mobile {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
   }
 }
