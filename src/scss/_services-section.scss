@@ -7,5 +7,34 @@
 
   &__service {
     text-align: center;
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+
+      &--data {
+        flex: 1;
+        width: 100%;
+      }
+    }
+
+    @include desktop {
+      &--image {
+        flex: 1;
+        max-width: 50%;
+      }
+    }
+  }
+
+  @include desktop {
+    &__service:nth-child(even) {
+      flex-direction: row;
+    }
+
+    &__service:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
   }
 }

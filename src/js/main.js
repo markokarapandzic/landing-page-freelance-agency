@@ -25,3 +25,19 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+const MAX_MOBILE_SCREEN_WIDTH = 800;
+document.addEventListener('DOMContentLoaded', () => {
+  if (screen.width <= MAX_MOBILE_SCREEN_WIDTH) {
+    resizeIcons();
+  }
+});
+
+function resizeIcons() {
+  const socialIcons = document.querySelectorAll('.contact-us__data__info__social-icons--icon');
+
+  socialIcons.forEach(icon => {
+    icon.classList.remove('fa-1x');
+    icon.classList.add('fa-2x');
+  });
+}

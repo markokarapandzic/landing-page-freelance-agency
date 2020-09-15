@@ -5,6 +5,10 @@
   justify-content: flex-start;
   margin-bottom: 2rem;
 
+  @include desktop {
+    width: 100%;
+  }
+
   &__header {
     text-align: center;
   }
