@@ -11,7 +11,7 @@
 
 Freelance Landing Page created with SASS and Vanilla JS.
 
-Check out a live version [here](https://markokarapandzic.github.io/portfolio-website/).
+Check out a live version [here](https://freelance-landing-page.netlify.app/).
 
 ### REQUIREMENTS
 
